@@ -7,11 +7,12 @@ import Todo from './Components/Todo'
 import PassGen from './Components/PassGen'
 import ForUseEffect from './Components/ForUseEffect'
 import ForSplashScreen from './Components/ForSplashScreen'
+import CurrencyConvertor from './Components/CurrencyConvertor'
 function App() {
 
   return (
     <>
-    <ForSplashScreen />
+  {/*   <ForSplashScreen /> */}
 
    {/*  <ForUseEffect /> */}
    {/*  <PassGen /> */}
