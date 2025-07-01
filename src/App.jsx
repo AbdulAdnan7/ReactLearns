@@ -2,23 +2,50 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import BackChanger from './Components/BackChanger'
-import Todo from './Components/Todo'
-import PassGen from './Components/PassGen'
-import ForUseEffect from './Components/ForUseEffect'
-import ForSplashScreen from './Components/ForSplashScreen'
-import CurrencyConvertor from './Components/CurrencyConvertor'
+import Header from './componets/Header'
+import Home from './componets/Home'
+import Layout from './componets/Layout'
+
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
+import About from './componets/About'
+
+let router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>
+      <Layout />
+      <Home />
+    </div>
+  },
+    {
+    path: "/about",
+    element: <div>
+      <Layout />
+      <About />
+    </div>
+  },
+    {
+    path: "/header",
+    element: <div>
+      <Layout />
+      <Header />
+    </div>
+  },
+]);
+
 function App() {
 
   return (
+
     <>
-  {/*   <ForSplashScreen /> */}
+    <div>
+    <RouterProvider router={router} />
 
-   {/*  <ForUseEffect /> */}
-   {/*  <PassGen /> */}
-
-{/*     <Todo /> */}
-{/*      <BackChanger /> */}
+    </div>
     </>
   )
 }
