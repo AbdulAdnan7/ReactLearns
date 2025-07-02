@@ -12,8 +12,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import About from './componets/About'
+import FormHooks from './Components/FormHooks'
 
-let router = createBrowserRouter([
+/* let router = createBrowserRouter([
   {
     path: "/",
     element: <div>
@@ -35,7 +36,7 @@ let router = createBrowserRouter([
       <Header />
     </div>
   },
-]);
+]); */
 
 function App() {
 
@@ -43,8 +44,9 @@ function App() {
 
     <>
     <div>
-    <RouterProvider router={router} />
-
+      <FormHooks />
+  {/*   <RouterProvider router={router} />
+ */}
     </div>
     </>
   )
