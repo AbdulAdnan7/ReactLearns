@@ -15,6 +15,7 @@ import About from './componets/About'
 import FormHooks from './Components/FormHooks'
 import Counters from './Components/Counters'
 import UseRefs from './Components/UseRefs'
+import TImer from './Components/TImer'
 
 /* let router = createBrowserRouter([
   {
@@ -46,7 +47,8 @@ function App() {
 
     <>
     <div>
-      <UseRefs />
+      <TImer />
+     {/*  <UseRefs /> */}
       {/* <Counters /> */}
      {/*  <FormHooks /> */}
   {/*   <RouterProvider router={router} />
